@@ -1,0 +1,66 @@
+---
+title:
+keywords: IIIFServer, IIIF, Zoomify, DeepZoom
+description: "IIIFServer allows zooming of ultra high-resolution images on the web with IIIF protocol, Zoomify, DeepZoom. It is powered by IIPImage."
+---
+
+<div class="row" id="typography">
+  <div class="col12 center">
+    <h1>IIIF Image Server</h1>
+    <p class="bigger gray">Allows zooming of ultra high-resolution images on the web with IIIF protocol,<br> Zoomify, DeepZoom. It is powered by IIPImage.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col12 center">
+    <h2>About</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col4">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim molestie turpis, vitae faucibus sem consectetur ut. Vestibulum vitae tellus tellus. Nullam mollis, ligula non porttitor laoreet, sem metus semper neque, nec condimentum magna velit id risus. Nam cursus laoreet luctus. Aliquam ex tortor, congue nec interdum sit amet, euismod pellentesque arcu.</p>
+  </div>
+  <div class="col4">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim molestie turpis, vitae faucibus sem consectetur ut. Vestibulum vitae tellus tellus. Nullam mollis, ligula non porttitor laoreet, sem metus semper neque, nec condimentum magna velit id risus. Nam cursus laoreet luctus. Aliquam ex tortor, congue nec interdum sit amet, euismod pellentesque arcu.</p>
+  </div>
+  <div class="col4">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim molestie turpis, vitae faucibus sem consectetur ut. Vestibulum vitae tellus tellus. Nullam mollis, ligula non porttitor laoreet, sem metus semper neque, nec condimentum magna velit id risus. Nam cursus laoreet luctus. Aliquam ex tortor, congue nec interdum sit amet, euismod pellentesque arcu.</p>
+  </div>
+</div>
+<div class="row">
+  <div class="col8 offset2 bg-gray-light center mary-4 padt-1 padb-2">
+    <h4 class="b pady-1">Are you looking for image hosting? Try <a href="http://www.klokanstorage.com">KlokanStorage</a>.</h4>
+    <a href="http://maptiler.com" class="btn" target="_blank">Read more</a>
+  </div>
+</div>
+<div class="row">
+  <div class="col6 padt-3">
+    <div class="bg-gray-light" id="viewer"></div>
+  </div>
+  <div class="col6">
+    <h2>IIIFViewer 
+      <a href="https://github.com/klokantech/iiifviewer" target="_blank">
+        <img class="marx-2" src="{{ site.baseurl }}img/GitHub-Mark-32px.png" alt="Github">
+      </a>
+    </h2>
+    <p class="bigger">IIIF WebGL / Canvas / DOM mobile-ready fast viewer powered by OpenLayers V3.</p>
+    <p>IIIF viewer from Klokan Technologies is optimized for desktop and mobile devices (iOS, Android), is open-source, free to use and has, compared to other viewers, the following extra features:</p>
+    <ul>
+      <li>Rotation on client side: pinch with fingers, alt-shift drag with the mouse.</li>
+      <li>Drawing tools: polygons, lines, markers — can be used to annotate parts of the pictures.</li>
+      <li>Color adjustment: saturation, lightness, etc.</li>
+    </ul>
+    <p class="padt-4">See full screen demo (and try it on mobile device):</p>
+    <p><a href="http://klokantech.github.io/iiifviewer/">http://klokantech.github.io/iiifviewer/</a></p>
+  </div>
+</div>
+<link href="http://openlayers.org/en/v3.2.0/css/ol.css" rel="stylesheet">
+<script src="http://openlayers.org/en/v3.2.0/build/ol.js" type="text/javascript"></script>
+<script src="http://klokantech.github.io/iiifviewer/ol-iiifviewer.js"></script>
+<script>
+var url = 'http://iiif.klokantech.com/demo.jp2/info.json';
+var IIIF = new IiifViewer('viewer', url, function() {
+  image = IIIF.getMap();
+  view = image.getView();
+  view.setZoom(4);
+});
+</script>
