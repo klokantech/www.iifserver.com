@@ -3,15 +3,53 @@ title: Download
 keywords: download, license
 description: Download of IIIFServer binaries.
 ---
+
 <div class="row">
-  <div class="col12">
+  <div class="col12 center">
     <h1>Download</h1>
-    <h3>Linux</h3>
-    <p>Debian</p>
-    <p>Ubuntu</p>
-    <p>RedHat</p>
-    <h3>Windows</h3>
-    <h3>Docker</h3>
+    <p class="big">Download latest stable binaries for</p>
+    <a id="btn-linux" class="btn-small-secondary" href="#linux">Linux</a>
+    <a id="btn-windows" class="btn-small-secondary" href="#windows">Windows</a>
+    <a id="btn-docker" class="btn-small-secondary" href="#docker">Docker</a>
+    <div id="tab-linux" class="active">
+      <h3>Linux</h3>
+      <table>
+        <tr>
+          <td style="width: 25%;"><img src="/img/distr/debian-logo.png"></td>
+          <td style="width: 25%;"><img src="/img/distr/ubuntu-logo.png"></td>
+          <td style="width: 25%;"><img src="/img/distr/redhat-logo.png"></td>
+          <!--<td style="width: 25%;"><img src="/img/distr/fedora-logo.png"></td>-->  
+        </tr>
+        <tr>
+          <td><strong>Debian</strong></td>
+          <td><strong>Ubuntu</strong></td>
+          <td><strong>Redhat</strong></td>
+          <!--<td><strong>Fedora</strong></td>--> 
+        </tr>
+        <tr>
+          <td><a href="" target="_blank"><img src="/img/download-icon.png"> 8 Jessie</a></td>
+          <td><a href="" target="_blank"><img src="/img/download-icon.png"> Vivid 15.04</a></td>
+          <td><a href="" target="_blank"><img src="/img/download-icon.png"> RHEL 7</a></td>
+          <!--          <td><a href="" target="_blank"><img src="/img/download-icon.png"> Fedora 20</a></td>-->
+        </tr>
+        <tr>
+          <td><a href="" target="_blank"><img src="/img/download-icon.png"> 7 Wheezy</a></td> 
+          <td></td>
+          <td><a href="" target="_blank"><img src="/img/download-icon.png"> RHEL 6</a></td>
+          <!--<td></td>-->
+        </tr>
+      </table>
+    </div>
+    <div id="tab-windows">
+      <h3>Windows</h3>
+      <p class="big">
+        Lastest binaries for Windows x86, x64, IIS.
+      </p>
+      <p><a href="" class="btn">Download</a></p>
+    </div>
+    <div id="tab-docker">
+      <h3>Docker</h3>
+    </div>
   </div>
 </div>
 <div class="row">
@@ -35,3 +73,23 @@ description: Download of IIIFServer binaries.
     <a class="btn mary-6" href="http://sites.fastspring.com/klokantech/product/iiifserver">Buy commercial licence</a>
   </div>
 </div>
+<script>
+  document.getElementById('btn-linux').onclick = function() {
+    tabsReset();
+    document.getElementById('tab-linux').className = 'active';
+  };
+  document.getElementById('btn-windows').onclick = function() {
+    tabsReset();
+    document.getElementById('tab-windows').className = 'active';
+  };
+  document.getElementById('btn-docker').onclick = function() {
+    tabsReset();
+    document.getElementById('tab-docker').className = 'active';
+  };
+
+  function tabsReset() {
+    document.getElementById('tab-linux').className = '';
+    document.getElementById('tab-windows').className = '';
+    document.getElementById('tab-docker').className = '';
+  }
+</script>

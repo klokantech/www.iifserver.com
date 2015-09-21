@@ -9,3 +9,13 @@
   width: 100%;
   height: 360px;
 }
+
+#tab-linux, #tab-windows, #tab-docker{
+  display: none;
+  height: 260px;
+
+}
+#tab-linux.active, #tab-windows.active, #tab-docker.active{
+  display: block;
+
+}
