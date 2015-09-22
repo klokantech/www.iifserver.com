@@ -12,4 +12,4 @@ defaults:
     values:
       layout: "default"
 
-baseurl: "http://klokantech.github.io/www.iiifserver.com/"
+baseurl: "http://www.iiifserver.com/"
