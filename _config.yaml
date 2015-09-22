@@ -12,4 +12,4 @@ defaults:
     values:
       layout: "default"
 
-baseurl: "http://www.iiifserver.com/"
+baseurl: "/"

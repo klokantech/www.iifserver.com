@@ -19,3 +19,15 @@
   display: block;
 
 }
+
+.link-hash{
+  padding-top: 80px; 
+  margin-top: -80px;
+  color: $color-gray-light;
+  text-decoration: none;
+
+  &:hover, &:active, &:target{
+    color: $color-gray;
+    text-decoration: none;
+  }
+}
