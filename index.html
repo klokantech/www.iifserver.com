@@ -4,53 +4,73 @@ keywords: iiifviewer
 description: "IIIFServer allows zooming of ultra high-resolution images on the web with IIIF protocol, Zoomify, DeepZoom. It is powered by IIPImage."
 ---
 
-<div class="row" id="typography">
-  <div class="col12 center">
-    <h1>IIIFServer</h1>
-    <p class="bigger gray">Client-server system for fast and efficient online viewing<br> and zooming of ultra high-resolution JPEG2000 and TIFF images.</p>
+<div class="paper main">
+  <div class="row banner">
+    <div class="col4"></div>
+    <div class="col8 center">
+      <h1>IIIFServer</h1>
+      <h2>by KlokanTechnologies</h2>
+      <p>Client-server system for fast and efficient online viewing and<br>
+        zooming of ultra high-resolution JPEG2000 and TIFF images.</p>
+      <a class="btn-stroke-gray-light" href="/download/">Download</a>
+    </div>
   </div>
-</div>
-<div class="row">
-  <div class="col12 center">
-    <h2>About</h2>
+  <div class="row">
+    <div class="col12 center padt-4">
+      <h2>About</h2>
+    </div>
   </div>
-</div>
-<div class="row">
-  <div class="col4">
-    <p>The IIPImage server is compatible with a large number of client-side viewers. Use either pure web viewers (written only in HTML/JavaScript) or plugin-based viewers using Adobe Flash, Silverlight or Java.</p>
+  <div class="row">
+    <div class="col4">
+      <p class="big">The IIPImage server is compatible with a large number of client-side 
+        viewers. Use either pure web viewers (written only in HTML/JavaScript) 
+        or plugin-based viewers using Adobe Flash, Silverlight or Java.</p>
+    </div>
+    <div class="col4">
+      <p class="big">Source images can be in either TIFF or JPEG2000 format, which has been 
+        implemented using the Kakadu library redistributable for non-commercial 
+        use. Commercial license is available as well.</p>
+    </div>
+    <div class="col4">
+      <p class="big"><a href="/download/">Download section</a> contains tested, 
+        ready-to-install binaries with guaranteed functionality. 
+        <a href="http://iipimage.sourceforge.net/" target="_blank">IIPImage</a> 
+        itself is fully open source with source code available under the GPL 
+        license.</p>
+    </div>
   </div>
-  <div class="col4">
-    <p>Source images can be in either TIFF or JPEG2000 format, which has been implemented using the Kakadu library redistributable for non-commercial use. <a>Commercial license</a> is available as well.</p>
+  <div class="row">
+    <div class="col12 bordertop-block borderbottom-block center mary-4 padt-6 padb-6">
+      <h2 class="b pady-1">Are you looking for image hosting? 
+        Try <a href="http://www.iiifhosting.com">IIIIFHosting</a>.</h2>
+      <a href="http://maptiler.com" class="btn-large" target="_blank">Read more</a>
+    </div>
   </div>
-  <div class="col4">
-    <p><a href="/download/">Download section</a> contains tested, ready-to-install binaries with guaranteed functionality. <a href="http://iipimage.sourceforge.net/" target="_blank">IIPImage</a> itself is fully open source with source code available under the GPL license.</p>
-  </div>
-</div>
-<div class="row">
-  <div class="col8 offset2 bg-gray-light center mary-4 padt-1 padb-2">
-    <h4 class="b pady-1">Are you looking for image hosting? Try <a href="http://www.iiifhosting.com">IiifHosting</a>.</h4>
-    <a href="http://maptiler.com" class="btn" target="_blank">Read more</a>
-  </div>
-</div>
-<div class="row">
-  <div class="col6 padt-3">
-    <div class="bg-gray-light" id="viewer"></div>
-  </div>
-  <div class="col6">
-    <h2>IIIFViewer 
-      <a href="https://github.com/klokantech/iiifviewer" target="_blank">
-        <img class="marx-2" src="{{ site.baseurl }}img/GitHub-Mark-32px.png" alt="Github">
-      </a>
-    </h2>
-    <p class="bigger">IIIF WebGL / Canvas / DOM mobile-ready fast viewer powered by OpenLayers V3.</p>
-    <p>IIIF viewer from Klokan Technologies is optimized for desktop and mobile devices (iOS, Android), is open-source, free to use and has, compared to other viewers, the following extra features:</p>
-    <ul>
-      <li>Rotation on client side: pinch with fingers, alt-shift drag with the mouse.</li>
-      <li>Drawing tools: polygons, lines, markers — can be used to annotate parts of the pictures.</li>
-      <li>Color adjustment: saturation, lightness, etc.</li>
-    </ul>
-    <p class="padt-4">See full screen demo (and try it on mobile device):</p>
-    <p><a href="http://klokantech.github.io/iiifviewer/">http://klokantech.github.io/iiifviewer/</a></p>
+  <div class="row">
+    <div class="col6 padt-3">
+      <div class="bg-gray-light" id="viewer"></div>
+    </div>
+    <div class="col6">
+      <h2>IIIFViewer 
+        <a href="https://github.com/klokantech/iiifviewer" target="_blank">
+          <img class="marx-2" src="{{ site.baseurl }}img/GitHub-Mark-32px.png" alt="Github">
+        </a>
+      </h2>
+      <p class="big">IIIFServer includes IIIFviewer - WebGL | Canvas | DOM mobile-ready fast viewer 
+        powered by OpenLayers V3.</p>
+      <p>IIIFviewer from Klokan Technologies is optimized for desktop and 
+        mobile devices (iOS, Android), is open-source, free to use and has, 
+        compared to other viewers, the following extra features:</p>
+      <ul>
+        <li>Rotation on client side</li>
+        <li>Drawing tools</li>
+        <li>WebGL accelerated</li>
+      </ul>
+      <p class="padt-2">See full screen demo (and try it on mobile device):<br>
+        <a href="http://klokantech.github.io/iiifviewer/">
+          http://klokantech.github.io/iiifviewer/</a>
+      </p>
+    </div>
   </div>
 </div>
 <link href="http://openlayers.org/en/v3.2.0/css/ol.css" rel="stylesheet">
