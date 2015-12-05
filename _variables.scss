@@ -1,6 +1,6 @@
 /* Colors */
-$color-primary: #A0050D;
-$color-secondary: #DD8B00;
+$color-primary: #115e94;
+$color-secondary: #fff;
 
 $color-gray-dark: #393939;
 $color-gray: #898989;
@@ -57,7 +57,7 @@ $padding-y: 15px;
 $padding-x: 15px;
 
 /* Container */
-$container-max: 1000px;
+$container-max: 1200px;
 $container-width: 95%;
 $container-padding-x: 0;
 $container-padding-y: 0;
@@ -101,8 +101,8 @@ $radius-bottom-left: $radius-all;
 $btn-color-bg: $color-primary;
 $btn-color: #fff;
 $btn-height: 40px;
-$btn-padding: 8px;
-$btn-radius: 4px;
+$btn-padding: 10px;
+$btn-radius: 5px;
 $btn-font-size: 14px;
 
 $btn-border: 2px;
@@ -111,21 +111,19 @@ $btn-small-scale: 0.8;
 /* butons colection */
 $btns: (
 //name, color, background-color, hover color, hover background
-("", #ffffff, $color-primary, #ffffff, lighten($color-primary, 10%)),
-("-white", transparent, #ffffff, #ffffff, $color-gray-light),
-("-secondary", #ffffff, $color-secondary, #ffffff, lighten($color-secondary, 10%)),
+("", #ffffff, $color-primary, #ffffff, darken($color-primary, 5%)),
 ("-dark", #ffffff, darken($color-primary, 10%), #ffffff, $color-primary),
-("-light", #ffffff, lighten($color-primary, 10%), #ffffff, lighten($color-primary, 15%)),
-("-gray-dark", $color-gray-light, $color-gray-dark, $color-gray-light, lighten($color-gray-dark, 10%)),
-("-gray-light", $color-gray-dark, $color-gray-light, $color-gray-dark, darken($color-gray-light, 10%))
+("-light", #ffffff, lighten($color-primary, 10%), #ffffff, darken($color-primary, 5%)),
+("-gray-dark", $color-gray-light, $color-gray-dark, $color-gray-light, darken($color-gray-dark, 5%)),
+("-gray-light", $color-gray-dark, $color-gray-light, $color-gray-dark, darken($color-gray-light, 5%))
 );
 
-$btns-bg-color: #fff;
+$btns-color: #fff;
+$btns-bg-color: $color-primary;
 $btns-pads: 3px 20px 5px 20px;
-$btns-border: 1px solid #000;
-$btns-bg-color: #fff;
+$btns-border: none;
 $btns-radius: 4px;
-$btns-hover-bg: $color-primary;
+$btns-hover-bg: darken($color-primary, 5%);
 $btns-hover-color: #fff;
 
 /* Border */
@@ -171,23 +169,33 @@ $input-padding-x: 10px;
 
 $legend-color: $color-gray-dark;
 
+/* Progressbar */
+$progress-width: 400px;
+$progress-bg: #fff;
+/* defines colors of segments from leftside */
+$progress-segments-colors: #da4d00, #41768a, #d4c5a9;
+
 /* KlokanTech components */
 
 $popupbg-bg-color: rgba(55, 55, 55, 0.8);
 $popup-bg-color: #fff;
+$popup-top: 30%;
+$popup-width: 400px;
+$popup-padding: 25px;
 
 $multicomplete-tag-bg-color: $color-gray;
 
 /* Top navbar */
 $navbar-top-height: 72px;
+$navbar-top-small-height: 48px;
 $navbar-top-margin-bottom: 20px;
 
 $navbar-top-zindex: 90;
 $navbar-top-bgcolor: $color-primary;
-$navbar-top-title-padding-bottom: 18px;
+$navbar-top-title-padding-bottom: 16px;
 $navbar-top-menu-padding-bottom: 28px;
 
-$navbar-top-title-size: 32px;
+$navbar-top-title-size: 36px;
 $navbar-top-title-color: #ffffff;
 
 $navbar-top-link-color: $color-gray-light;
@@ -203,10 +211,20 @@ $navside-item-padding: 20px;
 
 
 /* Sticky footer */
-$footer-color: #ffffff;
-$footer-color-bg: $color-gray-dark;
-$footer-link-color: $color-secondary;
-$footer-link-hover-color: lighten($color-primary, 10%);
+$footer-color: #868d97;
+$footer-color-bg: #374045;
+$footer-link-color: #868d97;
+$footer-link-hover-color: darken(#fff, 10%);
 $footer-link-hover-decoration: none;
-$footer-height: 50px;
+$footer-height: 80px;
+$footer-fontsize: 32px;
+$footer-padding: 24px 20px 16px 20px;
 $footer-fontweight: bold;
+$footer-border-color: transparent;
+$footer-bordertop-size: 0;
+
+/* mapcontrols */
+$map-control-size: 36px;
+$map-control-color: #fff;
+$map-control-bg: $color-primary;
+$map-control-margin: 1px 0;
