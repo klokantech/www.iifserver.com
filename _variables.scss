@@ -114,7 +114,7 @@ $btns: (
 ("", #ffffff, $color-primary, #ffffff, darken($color-primary, 5%)),
 ("-dark", #ffffff, darken($color-primary, 10%), #ffffff, $color-primary),
 ("-light", #ffffff, lighten($color-primary, 10%), #ffffff, darken($color-primary, 5%)),
-("-gray-dark", $color-gray-light, $color-gray-dark, $color-gray-light, darken($color-gray-dark, 5%)),
+("-gray-dark", #fff, #393939, #fff, lighten(#393939, 10%)),
 ("-gray-light", $color-gray-dark, $color-gray-light, $color-gray-dark, darken($color-gray-light, 5%))
 );
 
@@ -187,7 +187,7 @@ $multicomplete-tag-bg-color: $color-gray;
 
 /* Top navbar */
 $navbar-top-height: 50px;
-$navbar-top-small-height: 48px;
+$navbar-top-small-height: 50px;
 $navbar-top-margin-bottom: 10px;
 
 $navbar-top-zindex: 90;
@@ -195,7 +195,7 @@ $navbar-top-bgcolor: $color-primary;
 $navbar-top-title-padding-bottom: 16px;
 $navbar-top-menu-padding-bottom: 18px;
 
-$navbar-top-title-size: 36px;
+$navbar-top-title-size: 24px;
 $navbar-top-title-color: #ffffff;
 
 $navbar-top-link-color: $color-gray-light;

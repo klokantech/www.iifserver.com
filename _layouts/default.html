@@ -15,12 +15,15 @@
     <script type="text/javascript" src="{{ site.baseurl }}js/index.js"></script>
   </head>
   <body>
-    <div id="navbar-top">
+    <div id="navbar-top-small">
       <div class="container">
+        {% if page.id != 'home' %}
+        <a class="title" href="{{ site.baseurl }}">IIIFServer</a>
+        {% endif %}
         <ul class="nav">
           <li><a href="{{ site.baseurl }}download/">DOWNLOAD</a></li>
           <li><a href="{{ site.baseurl }}support/">SUPPORT</a></li>
-          <li><a href="{{ site.baseurl }}how-to/">HOW-TO</a></li>
+          <li><a href="{{ site.baseurl }}how-to/">HOW TO</a></li>
           <li><a href="http://www.klokantech.com/contact/" target="_blank">CONTACT</a></li>
           <li><a href="https://github.com/klokantech/iiifserver">
               <img class="octocat" src="{{ site.baseurl }}img/GitHub-Mark-Light-32px.png" alt="Github">
@@ -35,11 +38,10 @@
         </div>
       </div>
     </div>
-    <div class="container main">
         <!-- content -->
           {{ content }}
         <!-- end content -->
-    </div>
+
     <div class="footer">
       <div class="container">
         <a class="icon klokan" href="http://klokantech.com">K</a>

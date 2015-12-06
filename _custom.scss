@@ -38,7 +38,7 @@
   background-color: #fff;
   padding: 50px;
   
-  &.main{
+  &.home{
     background: url('img/iiifserver-logo-withbg.png');
     background-repeat: no-repeat;
     background-color: #fff;
@@ -72,8 +72,25 @@
   margin-right: 12px;
 }
 
+#navbar-top-small .title {
+  margin-left: 50px;
+}
+
+table thead{
+  border: none;
+  background-color: transparent;
+  
+  tr{
+    border-top: none;
+  }
+}
+
+.btn-stroke-gray-dark{
+  padding: 10px 30px;
+}
+
 //styles bug
-.btn, .btn-small, .btn-stroke, .btn-stroke-gray{
+.btn, .btn-small, .btn-stroke, .btn-stroke-gray, .btn-stroke-gray-dark{
   line-height: 1.3;
 }
 

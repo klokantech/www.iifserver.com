@@ -2,23 +2,24 @@
 layout: default
 ---
 
-<div class="row">
-  <div class="col4 flip">
-    <ul class="mary-4">
-      <li><a href="/how-to/">How to</a><br>
-        <ul>
-          <li><a href="/how-to/#encoding-parameters">Encoding parameters</a></li>
-          <li><a href="/how-to/#dommands">Commands for JPEG2000 encoding</a></li>
-          <li><a href="/how-to/#documents">Documents</a></li>
-        </ul>
-      <li><a href="/installation/">Instalation</a></li>
-    </ul>
+<div class="container main">
+  <div class="row">
+    <div class="col3">
+      <ul class="mary-4">
+        <li><a href="/how-to/">How to</a><br>
+          <ul>
+            <li><a href="/how-to/#encoding-parameters">Encoding parameters</a></li>
+            <li><a href="/how-to/#dommands">Commands for JPEG2000 encoding</a></li>
+            <li><a href="/how-to/#documents">Documents</a></li>
+          </ul>
+        <li><a href="/installation/">Instalation</a></li>
+      </ul>
 
+    </div>
+    <!-- content -->
+    <div class="col9 paper">
+      {{ content }}
+    </div>
+    <!-- end content -->
   </div>
-  <!-- content -->
-  <div class="col8 flip">
-    {{ content }}
-  </div>
-  <!-- end content -->
 </div>
-
