@@ -21,7 +21,7 @@
 }
 
 .link-hash{
-  padding-top: 80px; 
+  padding-top: 80px;
   margin-top: -80px;
   color: $color-gray-light;
   text-decoration: none;
@@ -33,38 +33,85 @@
 }
 
 .paper{
-  border-left: 1px solid #ccd1d7;  
+  border-left: 1px solid #ccd1d7;
   border-right: 1px solid #ccd1d7;
   background-color: #fff;
   padding: 50px;
-  
+
   &.home{
     background: url('img/iiifserver-logo-withbg.png');
     background-repeat: no-repeat;
     background-color: #fff;
+    background-position: 0 50px;
+    padding-top: 100px;
   }
 }
 
 .banner{
   height: 401px;
   border-bottom: 1px solid #e5e8eb;
-  
+
   h1{
-    color: $color-primary;
+    color: #298176;
     font-size: 90px;
     margin: 10px 0 0 0;
   }
-  
+
   h2{
     font-size: 36px;
     margin-top: 0;
   }
-  
+
   p{
     color: #393939;
     font-size: 22px;
     line-height: 1.6;
   }
+}
+
+#sidenav{
+  background-image: url('../img/iiifserver-logo-longshadow-s.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+  padding: 260px 0 10px 20px;
+  margin-top: 50px;
+
+  ul{
+    margin: 0;
+
+    li{
+      list-style-type: none;
+      a{
+        border-top: 1px solid #ccd1d7;
+        padding: 8px 35px;
+        display: block;
+        color: #666666;
+        text-decoration: none;
+        font-weight: bold;
+
+        &:hover{
+          color: #999999;
+        }
+
+        &.main{
+          background-color: #298176;
+          border-left: 1px solid #ccd1d7;
+          color: #fff;
+        }
+
+        &.activ{
+          background-color: #fff;
+          border-left: 1px solid #ccd1d7;
+        }
+
+      }
+      &:last-child a{
+        border-bottom: 1px solid #ccd1d7;
+      }
+
+    }
+  }
+
 }
 
 #navbar-top .nav a, #navbar-top-small .nav a{
@@ -79,7 +126,7 @@
 table thead{
   border: none;
   background-color: transparent;
-  
+
   tr{
     border-top: none;
   }

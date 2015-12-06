@@ -1,7 +1,7 @@
 ---
 layout: how-to
-title: How-to
-keywords: KlokanStorage, strorage, iiif, hosting
+title: How to
+keywords: Jpeg2000, TIFF
 description:
 ---
 
@@ -18,19 +18,19 @@ Google Earth for Mac/Linux/Windows can display your image distributed with
 IIPimage software.
 
 **Anybody who wants stunning online presentations of scanned documents, paintings, 
-maps, books, newspapers or other high-resolution images can use the free IIPImage 
+maps, books, newspapers or other high-resolution images can use the free IIIFServer 
 software to publish the images to the web directly from JPEG2000 or TIFF files.**
 
-We recommend installing the IIPImage software on a Linux (or other UNIX) server. 
+We recommend installing the IIIFServer software on a Linux (or other UNIX) server. 
 We have prepared a easy to install binary package for Debian and Ubuntu with 
 step-by-step instructions for installation.
 
-IIPImage streams images to the user through either the IIP protocol (Internet 
+IIIFServer streams images to the user through either the IIP protocol (Internet 
 Imaging Protocol) to one of the native clients or also in the latest releases 
 via the Zoomify or Deep Zoom tile protocol. Any Zoomify or Deep Zoom compatible 
 viewer can, therefore, be used for easy online panning and zooming of the 
 published images. Recently Klokan Technologies GmbH has implemented also 
-support for IIIF protocol (http://iiif.io/).
+support for [IIIF protocol](http://iiif.io/).
 
 **Neither the distribution nor the use of this application should be 
 for financial return!**
