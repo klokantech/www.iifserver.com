@@ -74,14 +74,13 @@ description: "IIIFServer allows zooming of ultra high-resolution images on the w
     </div>
   </div>
 </div>
-<link href="http://openlayers.org/en/v3.2.0/css/ol.css" rel="stylesheet">
 <script src="http://openlayers.org/en/v3.2.0/build/ol.js" type="text/javascript"></script>
 <script src="http://klokantech.github.io/iiifviewer/ol-iiifviewer.js"></script>
 <script>
-var url = 'http://iiif.klokantech.com/demo.jp2/info.json';
+var url = 'http://demo.iiifhosting.com/iiif/demo/info.json';
 var IIIF = new IiifViewer('viewer', url, function() {
   image = IIIF.getMap();
   view = image.getView();
-  view.setZoom(4);
+  view.setZoom(1);
 });
 </script>
