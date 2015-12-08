@@ -16,21 +16,19 @@ description: Download of IIIFServer binaries.
       <h2>Docker</h2>
       <p><i>Monolith of IIIFServer build in Docker.</i></p>
       <p>We provide a docker image consists from internaly connected and 
-        setup IIIF server with nginx and memcached. It is builded without 
+        setup IIIFServer with nginx and memcached. It is builded without 
         the nginx_enhanced_memcached_module to serve stored data directly 
-        from memcached. Whole service can be builded with docker-compose (sample 
-        docker-compose.yml is provided) from command-line with one command:</p>
-      <p><code class="mary-4">
-          docker-compose build --no-cache
-        </code></p>
-      <p>And run with another command:</p>
+        from memcached. Whole service can be run from command-line with 
+        one command:</p>
+
       <p><code>
-          docker-compose up --no-build
-        </code></p>
-      <p>It can be run with provided sample docker-compose.yml with only one 
-        change in the iiifserver section in volumes - only folder with data 
-        is needed to be properly setup. Service is available from outside on 
-        the 80 port.</p>
+      docker run -ti --rm -p 80:80 klokantech/iiifserver:latest
+      </code></p>
+      <p>And check demo file on url:</p>
+      <p><code>
+      http://127.0.0.1/demo/info.json
+      </code></p>
+
       <a class="btn" href="https://hub.docker.com/r/klokantech/iiifserver-iipimage-jpeg2000/">Docker Hub</a>
 
     </div>
