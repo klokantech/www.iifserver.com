@@ -45,7 +45,7 @@
   padding: 50px;
 
   &.home{
-    background: url('img/iiifserver-logo-withbg.png');
+    background: url('img/iiifserver-logo-graybg.png');
     background-repeat: no-repeat;
     background-color: #fff;
     background-position: 0 50px;
@@ -73,6 +73,30 @@
     font-size: 22px;
     line-height: 1.6;
   }
+}
+
+@media(max-width: 960px){
+  .banner{
+    height: 201px;
+
+    h1{
+      font-size: 48px;
+      margin: 10px 0 0 0;
+    }
+
+    h2{
+      font-size: 18px;
+      margin-top: 0;
+    }
+
+    p{
+      font-size: 14px;
+      line-height: 1.6;
+    }
+    img{
+      width: 200px;
+    }
+  } 
 }
 
 #sidenav{
