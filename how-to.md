@@ -7,6 +7,8 @@ description:
 
 #How to
 
+<i>Note: This section is under construction - based on our original page <a href="http://help.oldmapsonline.org/jpeg2000">http://help.oldmapsonline.org/jpeg2000</a>.</i>
+
 IIIFServer is a light-weight client-server system for fast and efficient online 
 viewing and zooming of ultra high-resolution JPEG2000 and TIFF images. It is 
 designed to be bandwidth and memory efficient and usable over a slow Internet 
