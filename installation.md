@@ -72,7 +72,7 @@ sudo yum install nginx
 Download a ready-to-use docker image proving IIIF service via IIIFServer powered by IIPImage, Kakadu JPEG2000, nginx and memcached.
 JPEG2000 images in "/data" are made available via IIIF Image API 2.0.
 The container automatically encodes TIFF and JPEG files in "/dropzone" volume into .jp2 format. 
-Whole IIIF service can be started with one command:</p>
+Whole IIIF service can be started with one command:
 
 {% highlight html %}
 docker run -ti --rm -p 80:80 klokantech/iiifserver:latest
