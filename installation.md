@@ -17,8 +17,8 @@ description: instalation of IIIFServer.
 
 Configure script: */etc/apache2/mods-available/iiifserver.conf*
 {% highlight html %}
- sudo apt-get install apache2 libapache2-mod-fcgid
- sudo a2enmod rewrite
+sudo apt-get install apache2 libapache2-mod-fcgid
+sudo a2enmod rewrite
 {% endhighlight %}
 
 ####Lighttpd
