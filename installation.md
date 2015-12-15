@@ -63,9 +63,13 @@ sudo yum install nginx
 
 ###Image directory
 
-1. Default folter `/data/` is created during installation with sample image`demo.jp2`.
-2. Change value for `FILENAME_PREFIX` in configure script of your webserver (see above)
+Default folder `/data/` is created during installation with sample image `demo.jp2`.
+Change value for `FILESYSTEM_PREFIX` in configure script of your webserver (see above).
 
+###Image extension
+
+Change value for `FILENAME_EXTENSION` in configure script of your webserver (see above).
+Default value created during installation is `.jp2`.
 
 ## Installation with Docker
 
