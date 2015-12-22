@@ -37,19 +37,18 @@ sudo apt-get install nginx
 
 ###CentOS and Fedora
 
-####Apache2 (Httpd)
+####Apache2 (httpd)
 
 Configure script: */etc/httpd/conf.d/iiifserver.conf*
 {% highlight html %}
-sudo apt-get install httpd
-sudo a2enmod rewrite
+sudo yum install httpd mod_fcgid
 {% endhighlight %}
 
 ####Lighttpd
 
 Configure script: */etc/lighttpd/conf.d/20-iiifserver.conf*
 {% highlight html %}
-sudo yum install lighttpd
+sudo yum install lighttpd lighttpd-fastcgi
 {% endhighlight %}
 
 ####Nginx
