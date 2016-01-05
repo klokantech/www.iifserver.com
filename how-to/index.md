@@ -1,6 +1,7 @@
 ---
 layout: how-to
 title: How to
+id: how-to
 keywords: Jpeg2000, TIFF
 description:
 ---
