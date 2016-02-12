@@ -8,7 +8,7 @@ description: instalation of IIIFServer.
 
 #Installation
 
-##Docker
+## Docker
 
 Download a ready-to-use docker image proving IIIF service via IIIFServer 
 powered by IIPImage, Kakadu JPEG2000, nginx and memcached.
@@ -29,6 +29,6 @@ http://127.0.0.1/demo
 
 To include you own data you can mount your existing directory with .jp2 files to /data or a directory with .tif or .jpg files to /dropzone. The argument `-v` can be used for this mapping of directories, for example: `-v /my/tifs:/dropzone`.
 
-##Kitematic
+## Kitematic
 
 <iframe width="420" height="315" src="https://www.youtube.com/embed/nKjI_CvHyHg" frameborder="0" allowfullscreen></iframe>
