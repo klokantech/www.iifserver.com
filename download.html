@@ -11,47 +11,25 @@ description: Download of IIIFServer binaries.
       <p class="big">Download latest stable binaries</p>
     </div>
   </div>
-  <div class="row">
-    <div class="col8">
-      <h2>Docker</h2>
-      <p><i>IIIFServer in a monolith Docker container.</i></p>
-      <p>Download a ready-to-use docker image proving IIIF service via IIIFServer powered by IIPImage, Kakadu JPEG2000, nginx and memcached.
-        JPEG2000 images in "/data" are made available via IIIF Image API 2.0.
-        The container automatically encodes TIFF and JPEG files in "/dropzone" volume into .jp2 format. 
-        Whole IIIF service can be started with one command:</p>
-      <p><code>
-          docker run -ti --rm -p 80:80 klokantech/iiifserver-iipimage-jpeg2000
-        </code></p>
-      <p>And check demo file on url:</p>
-      <p><code>
-          http://127.0.0.1/demo
-        </code></p>
-      <p>Or using Kitematic.
-        <a class="btn marx-3" href="https://hub.docker.com/r/klokantech/iiifserver-iipimage-jpeg2000/">Docker Hub</a>
-      </p>
-    </div>
-    <div class="col4 center">
-      <img src="{{ site.baseurl }}img/docker-vertical.png" alt="Docker logo">
-    </div>
-  </div>
-  <div class="row padb-3 bordertop-block">
+
+  <div class="row padb-3">
     <div class="col6">
 
       <h2>Windows</h2>
       <p><i>Prepared installation package for easy use.</i></p>
-      <p class="big">This file contains tested IIIFServer package which is 
-        ready-to-install on Microsoft Windows with guaranteed functionality. 
-        There is no need additional compilations. The installation has an user 
-        friendly installation guide for everyone. More advanced setting 
-        could be done after installation but this isn't required. See our 
+      <p class="big">This file contains tested IIIFServer package which is
+        ready-to-install on Microsoft Windows with guaranteed functionality.
+        There is no need additional compilations. The installation has an user
+        friendly installation guide for everyone. More advanced setting
+        could be done after installation but this isn't required. See our
         videos or read more in <a href="{{ site.baseurl }}how-to/">how-to section</a>.</p>
       <p>Lastest binaries for Windows x86, x64, IIS
         <a href="http://downloads.klokantech.com/iiifserver/iiifserver-{{version}}.win-IIS.x86_64.exe" class="btn marx-2">
           <img src="{{ site.baseurl }}img/download-icon-w.png"> Download</a></p>
     </div>
     <div class="col6 center padt-8">
-      <iframe width="420" height="315" 
-              src="https://www.youtube.com/embed/RNy9-1jv7mw" 
+      <iframe width="420" height="315"
+              src="https://www.youtube.com/embed/RNy9-1jv7mw"
               frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
@@ -60,10 +38,10 @@ description: Download of IIIFServer binaries.
       <h2>Linux</h2>
       <p><i>Binaries for the most common linux distros.</i></p>
       <p class="padb-4">
-        We provide also automatically build linux binaries for most common 
-        linux distributions. The installation requires lighttpd or nginx as 
-        web server. We strongly recommend with memcached for fastest serving 
-        of image. See our <a href="{{ site.baseurl }}installation/">installation 
+        We provide also automatically build linux binaries for most common
+        linux distributions. The installation requires lighttpd or nginx as
+        web server. We strongly recommend with memcached for fastest serving
+        of image. See our <a href="{{ site.baseurl }}installation/">installation
           guide</a>.
       </p>
     </div>
@@ -121,6 +99,29 @@ description: Download of IIIFServer binaries.
           </tr>
         </tbody>
       </table>
+    </div>
+  </div>
+  <div class="row  bordertop-block">
+    <div class="col8">
+      <h2>Docker</h2>
+      <p><i>IIIFServer in a monolith Docker container.</i></p>
+      <p>Download a ready-to-use docker image proving IIIF service via IIIFServer powered by IIPImage, Kakadu JPEG2000, nginx and memcached.
+        JPEG2000 images in "/data" are made available via IIIF Image API 2.0.
+        The container automatically encodes TIFF and JPEG files in "/dropzone" volume into .jp2 format.
+        Whole IIIF service can be started with one command:</p>
+      <p><code>
+          docker run -ti --rm -p 80:80 klokantech/iiifserver-iipimage-jpeg2000
+        </code></p>
+      <p>And check demo file on url:</p>
+      <p><code>
+          http://127.0.0.1/demo
+        </code></p>
+      <p>Or using Kitematic.
+        <a class="btn marx-3" href="https://hub.docker.com/r/klokantech/iiifserver-iipimage-jpeg2000/">Docker Hub</a>
+      </p>
+    </div>
+    <div class="col4 center">
+      <img src="{{ site.baseurl }}img/docker-vertical.png" alt="Docker logo">
     </div>
   </div>
 
