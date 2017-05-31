@@ -1,0 +1,163 @@
+---
+title: Changelog
+keywords: changelog, IIIFServer
+description: Changelog of IIIFServer versions.
+---
+<div class="container main paper">
+  <div class="row">
+    <div class="col12 center">
+      <h1>Changelog</h1>
+      <p class="big">List of new versions and latest updates of IIIFServer</p>
+    </div>
+  </div>
+
+  <div class="row padb-3">
+    <div class="col6 offset3 padb-5">
+
+      <h2>Version 1.0.0-262-4dfca8d</h2>
+      <p>Released: 2017-05-31</p>
+      <ul>
+        <li>Upgraded to Kakadu 7.9.1</li>
+        <li>Fixed Apache2 rewrites for localhost/iiif/</li>
+        <li>Added Ubuntu 16.10, 17.04, Fedora 23, 24, and 25 binaries</li>
+      </ul>
+      <p>Changes in iipimage:</p>
+      <ul>
+        <li>Added extra conditions to JTL uncompressed tile request (by ruven)</li>
+        <li>Fixed KakaduImage for images with missing codestreams (by ruven)</li>
+        <li>Fixed bug when greyscale conversion requested (by ruven)</li>
+        <li>Fixed invalid IIIF region request (by MartinRumanek)</li>
+        <li>Fixed scaling factor for bilinear interpolation in Transforms.cc (by ruven)</li>
+        <li>Fixed IIIF URL parser (by dfukagaw28)</li>
+      </ul>
+
+      <h2>Version 1.0.0-243-2aa4a68</h2>
+      <p>Released: 2017-01-04</p>
+      <ul>
+        <li>Added IIIF 2.0 manifest.json (http://iiif.io/api/presentation/2.0/)</li>
+      </ul>
+      <p>Changes in iipimage:</p>
+      <ul>
+        <li>Update of IIIF aspect ratio code exceeding max CVT limit (by ruven)</li>
+      </ul>
+
+      <h2>Version 1.0.0-241-a643884</h2>
+      <p>Released: 2016-11-24</p>
+      <ul>
+        <li>Fixed IIIF requesting region outside of the image resolution throws error</li>
+        <li>Fixed KakaduImage infinite loop when requested region has 0px in width or height</li>
+        <li>Added separated log files based on PID (replaces $PID in the logfile path)</li>
+      </ul>
+      <p>Changes in iipimage:</p>
+      <ul>
+        <li>Added IIIF 2.1 square region support (by ruven)</li>
+        <li>Modified IIIF.cc to respect aspect ratio and size exceeds server max CVT limit (by ruven)</li>
+      </ul>
+
+      <h2>Version 1.0.0-239-4a4cd19</h2>
+      <p>Released: 2016-08-31</p>
+      <ul>
+        <li>Fixed memcached key for URL longer than 250 characters - using sha512</li>
+        <li>Added --deactivate argument to the command line</li>
+        <li>Added Ubuntu 16.04 LTS binaries</li>
+      </ul>
+      <p>Changes in iipimage:</p>
+      <ul>
+        <li>Added custom header for IIIF IDs (X-IIIF-ID) (by ahankinson)</li>
+        <li>Added fix for API change in get_colour_mapping() function in Kakadu version 7.8 (by ruven)</li>
+        <li>Fixed possible overflow in filter_contrast function (by ruven)</li>
+        <li>Removed "gray" from IIIF list of supported features - already specified in the qualities list (by ruven)</li>
+        <li>Fixed IIIF info.json to avoid problems with images containing only one resolution level (by ruven)</li>
+        <li>Added ALLOW_UPSCALING option - by default it is upscaling the requested image (by stephenn-cogapp)</li>
+        <li>Fixed bug in rotation code for 270 degs introduced when parallelization added (by ruven)</li>
+      </ul>
+
+      <h2>Version 1.0.0-191-9d5c93f</h2>
+      <p>Released: 2016-05-12</p>
+      <ul>
+        <li>Fixed cutting DOMAINS string</li>
+        <li>Fixed post-install scripts of DEB/RPM packages</li>
+        <li>Fixed caching info.json for different HTTP_HOST on the same server (used in memcached key)</li>
+        <li>Fixed reading JPEG encoded TIFF with Windows binaries</li>
+      </ul>
+      <p>Changes in iipimage:</p>
+      <ul>
+        <li>Added sizes field to IIIF JSON responses giving list of exportable pyramid sizes smaller than MAX_CVT (by ruven)</li>
+      </ul>
+
+      <h2>Version 1.0.0-180-e0a74a5</h2>
+      <p>Released: 2016-03-08</p>
+      <ul>
+        <li>Upgraded to Kakadu 7.8</li>
+        <li>Fixed Windows 7 binaries (invalid Kakadu compilation)</li>
+        <li>Automatic redirect from /iiif/<id> to /iiif/<id>/ (iff used VIEWER and FILENAME_EXTENSION parameters)</li>
+        <li>Fixed respecting HTTPS requests in IIIF protocol (using HTTPS or HTTP_X_FORWARDED_PROTO headers)</li>
+        <li>Added Windows IIS Rewrite module for x86 build with improved setup</li>
+      </ul>
+      <p>Changes in iipimage:</p>
+      <ul>
+        <li>Added support for 1 bit bilevel TIFF (by ruven)</li>
+        <li>Added backlog parameter support for command line use through --backlog parameter (by ruven)</li>
+        <li>Fixed several more Coverity scan warnings (by ruven)</li>
+        <li>Minor update to IIPImage.cc to reduce risk of race condition in stat -> fopen calls (by ruven)</li>
+        <li>Added ifdefs to Transform.cc to enforce either ivdep for icc or openmp for gcc (by ruven)</li>
+        <li>Fixed a series of minor issues identified by Coverity scan (by ruven)</li>
+        <li>Added check to JPEGCompressor to reject images that are not 8 bits per channel (by ruven)</li>
+        <li>Added new floatProcessing() function to View.h to simplify code in JTL and CVT (by ruven)</li>
+        <li>Added extra parameter check for incoherent region sizes for IIIF protocol (by ruven)</li>
+      </ul>
+
+      <h2>Version 1.0.0-165-c2e8aa1</h2>
+      <p>Released: 2015-12-23</p>
+      <ul>
+        <li>Fixed Windows 10 setup</li>
+        <li>Added CentOS 6 binaries</li>
+      </ul>
+      <p>Changes in iipimage:</p>
+      <ul>
+        <li>Fixed infinite loop in View::calculateResolution if requested size = 0. Set minimum output size to 1px (by ruven)</li>
+      </ul>
+
+      <h2>Version 1.0.0-164-2653da7</h2>
+      <p>Released: 2015-12-16</p>
+      <ul>
+        <li><strong>Initial release of IIIFServer</strong></li>
+        <li>Upgraded to Kakadu 7.7</li>
+        <li>Added IIIF 2.1 square region support</li>
+        <li>Added VIEWER server parameter - path to the custom HTML viewer for IIIF protocol</li>
+        <li>Added FILENAME_EXTENSION server parameter for IIIF protocol</li>
+        <li>Added DOMAINS server parameter for IIIF protocol</li>
+        <li>Added deploy scripts, default configuration for Apache2, Lighttd, Nginx web servers inside DEB/RPM packages</li>
+        <li>Added respecting HTTPS from X-Forwarded-Proto header</li>
+        <li>Changed watermarking source code - respect correctly alpha channel of watermark</li>
+        <li>Fixed compilation on Windows platform - missing M_PI definition</li>
+      </ul>
+
+
+    </div>
+  </div>
+
+  {% comment %}
+  <div class="row">
+    <div class="col6">
+      <h2>Maintenance</h2>
+      <ul>
+        <li>Latest binaries</li>
+        <li>Email notification</li>
+      </ul>
+    </div>
+    <div class="col6 center">
+      <a class="btn mary-6" href="http://sites.fastspring.com/klokantech/product/iiifserver">Purchase maintenance</a>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col6">
+      <h2>Commercial license</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas dignissim molestie turpis, vitae faucibus sem consectetur ut. Vestibulum vitae tellus tellus. Nullam mollis, ligula non porttitor laoreet.</p>
+    </div>
+    <div class="col6 center">
+      <a class="btn mary-6" href="http://sites.fastspring.com/klokantech/product/iiifserver">Buy commercial licence</a>
+    </div>
+  </div>
+  {% endcomment %}
+</div>
