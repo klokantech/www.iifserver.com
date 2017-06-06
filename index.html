@@ -13,38 +13,45 @@ description: "IIIFServer allows zooming of ultra high-resolution images on the w
     <div class="col8 center">
       <h1>IIIFServer</h1>
       <h2>by Klokan Technologies</h2>
-      <p class="padb-3">Client-server system for fast and efficient online viewing and<br>
-        zooming of ultra high-resolution JPEG2000 and TIFF images.</p>
+      <p class="padb-3">Software for serving images from your infrastructure</p>
       <a class="btn-stroke-gray-dark" href="{{ site.baseurl }}download/">Download</a>
     </div>
   </div>
   <div class="row">
-    <div class="col12 center padt-4">
-      <h2>About</h2>
+    <div class="col12 center pady-4">
+      <p class="bigger b">Do you prefer to host your images in-house - on your own
+        servers? Need an upgrade of your existing image server? Install
+        IIIFServer software to publish your digital collection.</p>
     </div>
   </div>
   <div class="row">
     <div class="col4">
-      <p class="big">The IIPImage server is compatible with a large number of client-side 
-        viewers. Use either pure web viewers (written only in HTML/JavaScript) 
-        or plugin-based viewers using Adobe Flash, Silverlight or Java.</p>
+      <p class="big">The IIIFServer is easy to use binary installer distributed
+        on Windows or Linux (Docker, .deb, .rpm). The software is designed for
+        serving large number images on the web. Images are available in the
+        zoomable viewer for browsing or embedding.</p>
     </div>
     <div class="col4">
-      <p class="big">Source images can be in either TIFF or JPEG2000 format, which has been 
-        implemented using the Kakadu library redistributable for non-commercial 
-        use. Commercial license is available as well.</p>
+      <p class="big"><a href="http://iiif.io/api/image/2.0/">IIIF Image API version 2.0</a>
+        as interoperability standard is fully supported. It allows you to be
+        compatible with a large number of client-side viewers and applications.
+        Such as <a href="http://projectmirador.org/" target="_blank">Mirador</a>,
+        <a href="https://openseadragon.github.io/" target="_blank">OpenSeadreagon</a>,
+        <a href="http://www.georeferencer.com" target="_blank">Georeferencer</a>,
+        <a href="https://github.com/klokantech/iiifviewer" target="_blank">IIIFViewer</a>
+        and more.</p>
     </div>
     <div class="col4">
-      <p class="big"><a href="{{ site.baseurl }}download/">Download section</a> contains tested, 
-        ready-to-install binaries with guaranteed functionality. 
-        <a href="http://iipimage.sourceforge.net/" target="_blank">IIPImage</a> 
-        itself is fully open source with source code available under the GPL 
-        license.</p>
+      <p class="big">Powered by JPEG2000 format.
+        Source images can be in either TIFF or JPEG2000 format, which has been
+        implemented using the Kakadu library.
+        <a href="{{ site.baseurl }}download/">Download section</a> contains tested,
+        ready-to-install binaries with guaranteed functionality.</p>
     </div>
   </div>
   <div class="row">
     <div class="col12 bordertop-block borderbottom-block center mary-4 padt-6 padb-6">
-      <h2 class="b pady-1">Are you looking for image hosting? 
+      <h2 class="b pady-1">Are you looking for image hosting?
         Try <a href="http://www.iiifhosting.com">IIIFHosting.com</a>.</h2>
       <a href="http://www.iiifhosting.com" class="btn-large" target="_blank">Read more</a>
     </div>
@@ -54,15 +61,15 @@ description: "IIIFServer allows zooming of ultra high-resolution images on the w
       <div class="bg-gray-light" id="viewer"></div>
     </div>
     <div class="col6">
-      <h2>IIIFViewer 
+      <h2>IIIFViewer
         <a href="https://github.com/klokantech/iiifviewer" target="_blank">
           <img class="marx-2" src="{{ site.baseurl }}img/GitHub-Mark-32px.png" alt="Github">
         </a>
       </h2>
       <p class="big">IIIFServer includes IIIFviewer - WebGL | Canvas | DOM<br>
         mobile-ready fast viewer powered by OpenLayers V3.</p>
-      <p>IIIFViewer is optimized for desktop and 
-        mobile devices (iOS, Android), is open-source, free to use and has, 
+      <p>IIIFViewer is optimized for desktop and
+        mobile devices (iOS, Android), is open-source, free to use and has,
         compared to other viewers, the following extra features:</p>
       <ul>
         <li>Rotation on client side</li>
@@ -82,19 +89,19 @@ description: "IIIFServer allows zooming of ultra high-resolution images on the w
           <img class="marx-2" src="{{ site.baseurl }}img/GitHub-Mark-32px.png" alt="Github">
         </a>
       </h2>
-      <p class="small">This plugin adds support for IIIF (http://iiif.io/) APIs into 
-        <a href="http://www.omeka.org/">Omeka</a>. 
-        Items created in Omeka can load images from any existing IIIF server. 
-        Each Omeka item with IIIF image exposes the presentation metadata via 
-        the IIIF Manifest URL - so the items can be easily displayed and used 
-        in other tools such as Mirador, UniversalViewer or Georeferencer. 
-        Users can configure in the plugin the IIIFHosting.com service - then 
-        the new images such as JPEG or TIFFs uploaded via administration of 
-        Omeka website will be turned into IIIF image service automatically 
-        and are going to be available in a fullscreen zoomable viewer and 
+      <p class="small">This plugin adds support for IIIF (http://iiif.io/) APIs into
+        <a href="http://www.omeka.org/">Omeka</a>.
+        Items created in Omeka can load images from any existing IIIF server.
+        Each Omeka item with IIIF image exposes the presentation metadata via
+        the IIIF Manifest URL - so the items can be easily displayed and used
+        in other tools such as Mirador, UniversalViewer or Georeferencer.
+        Users can configure in the plugin the IIIFHosting.com service - then
+        the new images such as JPEG or TIFFs uploaded via administration of
+        Omeka website will be turned into IIIF image service automatically
+        and are going to be available in a fullscreen zoomable viewer and
         in variable pixel size via a responsive image service.</p>
-      <a href="https://github.com/klokantech/omeka-plugin-IIIF" 
-         class="btn" target="_blank">View on Github 
+      <a href="https://github.com/klokantech/omeka-plugin-IIIF"
+         class="btn" target="_blank">View on Github
         <img class="github" src="{{ site.baseurl }}img/GitHub-Mark-Light-32px.png" alt="Github"></a>
       <a class="btn" href="http://omeka.klokantech.com" target="_blank">See a demo</a>
     </div>
