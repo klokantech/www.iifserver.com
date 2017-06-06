@@ -47,14 +47,8 @@ non-commercial use only**.
 
 ## How to convert my images into JPEG2000?
 
-There are many tools able to convert existing images into .JP2 format.
-We recommend for batch processing using the freely available tools distributed
-with the Kakadu JPEG2000 Library: for encoding (kdu_compress), transcoding
-(kdu_transcode), viewing with metadata and file structure display (kdu_show):
-
-You can download them for free for Windows, Mac and Linux at:
-[http://www.kakadusoftware.com/](http://www.kakadusoftware.com/)
-Please read the documentation attached to these tools.
+IIIFServer is distributed with a graphical user interface for batch encoding
+of JPEG and TIFFs.
 
 ## Encoding parameters for JPEG2000 <a href="#encoding-parameters" id="encoding-parameters" class="link-hash">#</a>
 
