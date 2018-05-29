@@ -14,6 +14,26 @@ description: Changelog of IIIFServer versions.
   <div class="row padb-3">
     <div class="col6 offset3 padb-5">
 
+      <h2>Version 1.0.0-288-cd2cdb2</h2>
+      <p>Released: 2018-05-28</p>
+      <ul>
+        <li>Upgraded to Kakadu 7.10.2</li>
+        <li>Fixed encoding of slash (/) in IIIF Image identifier according to the IIIF protocol</li>
+        <li>Added new Linux binaries: Ubuntu 17.10, 18.04, Fedora 26, 27, and 28 binaries</li>
+      </ul>
+      <p>Changes in iipimage:</p>
+      <ul>
+        <li>Add correct prefix and marker when echoing XMP metadata into CVT jpeg (by Ben Rubinstein)</li>
+        <li>Fixed crashes with older versions of Kakadu libraries (by ruven)</li>
+        <li>Added URI_MAP environment variable to enable mapping of URL prefixes to protocols (by ruven)</li>
+        <li>Added ICC profile embedding support in JPEG tiles, new environment variable EMBED_ICC (by </li>ruven)
+        <li>Added "Access-Control-Allow-Headers" field if CORS has been set (by ruven)</li>
+        <li>Increased JPEG buffer size to handle large markers such as XMP metadata (by ruven)</li>
+        <li>Added input validation for SPECTRA, PFL and MINMAX commands to avoid segfaults (by John </li>Heasman at DocuSign)
+        <li>Added missing RED, GREEN and BLUE colormap implementations to Transforms.cc (by ruven)</li>
+        <li>Modified bilinear interpolation code to avoid risk of unallocated buffers at edges (by ruven)</li>
+      </ul>
+
       <h2>Version 1.0.0-262-4dfca8d</h2>
       <p>Released: 2017-05-31</p>
       <ul>

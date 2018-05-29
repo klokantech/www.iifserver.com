@@ -74,3 +74,15 @@ function hideMessages(sec) {
     }
   }, sec * 1000);
 }
+
+function showHide(elId) {
+  var element = document.getElementById(elId);
+  if (element) {
+    if (element.classList.contains('hidden')) {
+      element.classList.remove('hidden');
+    }
+    else {
+      element.classList.add('hidden');
+    }
+  }
+}
